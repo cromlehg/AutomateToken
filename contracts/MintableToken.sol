@@ -26,6 +26,10 @@ contract MintableToken is StandardToken, Ownable {
     unlockedAddressesDuringITO[addressToUnlock] = true;
   }
 
+  function lockAddressDuringITO(address addressToUnlock) public onlyOwnerOrSaleAgent {
+    unlockedAddressesDuringITO[addressToUnlock] = false;
+  }
+
   modifier notLocked(address sender) {
     require(mintingFinished ||
             sender == saleAgent || 
