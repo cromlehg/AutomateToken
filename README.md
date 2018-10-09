@@ -50,9 +50,6 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 * _Extra tokens (team, bounty, advisors)_       : 8%
 * _Crowdsale tokens_                            : 92%
 
-## AirDrop feature
-* Contains airdrop support contracts
-
 ## Main network configuration
 
 * _Extra tokens wallet_        : 
