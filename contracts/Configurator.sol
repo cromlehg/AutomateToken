@@ -19,34 +19,32 @@ contract Configurator is Ownable {
 
     preITO = new PreITO();
 
-    preITO.setWallet(0x89C92383bCF3EecD5180aBd055Bf319ceFD2D516);
-    preITO.setStart(1531612800);
+    preITO.setWallet(0xE4cfb1d905e922a93ddcA8528ab0f87b31E9e335);
+    preITO.setStart(1540339200);
     preITO.addMilestone(30, 30);
     preITO.addMilestone(30, 15);
     preITO.setPrice(1000000000000000000000);
     preITO.setMinInvestedLimit(100000000000000000);
     preITO.setHardcap(10000000000000000000000);
     preITO.setToken(token);
-    preITO.setDirectMintAgent(0xF3D57FC2903Cbdfe1e1d33bE38Ad0A0753E72406);
 
     token.setSaleAgent(preITO);
 
     ito = new ITO();
 
-    ito.setWallet(0xb13a4803bcC374B8BbCaf625cdD0a3Ac85CdC0DA);
-    ito.setStart(1535760000);
+    ito.setWallet(0xE4cfb1d905e922a93ddcA8528ab0f87b31E9e335);
+    ito.setStart(1545609600);
     ito.addMilestone(30, 10);
     ito.addMilestone(60, 0);
     ito.setPrice(1000000000000000000000);
     ito.setMinInvestedLimit(100000000000000000);
     ito.setHardcap(20000000000000000000000);
-    ito.addWallet(0xA5A5cf5325AeDA4aB32b9b0E0E8fa91aBDb64DdC, 8);
+    ito.addWallet(0xA6b01Ed54c51f5158e1D8c85BFb3c45cB28F323C, 8);
     ito.setToken(token);
-    ito.setDirectMintAgent(0xF3D57FC2903Cbdfe1e1d33bE38Ad0A0753E72406);
 
     preITO.setNextSaleAgent(ito);
 
-    address manager = 0xd8Fe93097F0Ef354fEfee2e77458eeCc19D8D704;
+    address manager = 0xdc820f1BD6DaDF2DaD597D2e85255003c596Ad8a;
 
     token.transferOwnership(manager);
     preITO.transferOwnership(manager);

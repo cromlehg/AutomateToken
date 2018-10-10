@@ -52,7 +52,8 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 
 ## Main network configuration
 
-* _Extra tokens wallet_        : 
+* _Extra tokens wallet_        : 0xA6b01Ed54c51f5158e1D8c85BFb3c45cB28F323C
+* _Manager wallet_             : 0xdc820f1BD6DaDF2DaD597D2e85255003c596Ad8a
 
 ### Links
 1. _Token_ - 
@@ -69,8 +70,8 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 * _Minimal insvested limit_     : 0.1 ETH
 * _Base price_                  : 1 ETH = 100 Tokens
 * _Hardcap_                     : 10 000 ETH
-* _Start_                       : 
-* _Wallet_                      : 
+* _Start_                       : Wed, 24 Oct 2018 00:00:00 GMT
+* _Wallet_                      : 0xE4cfb1d905e922a93ddcA8528ab0f87b31E9e335
 
 ##### Milestones
 1. 30 days, bonus +30%
@@ -80,8 +81,8 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 * _Minimal insvested limit_     : 0.1 ETH
 * _Base price_                  : 1 ETH = 100 Tokens
 * _Hardcap_                     : 20 000 ETH
-* _Start_                       : 
-* _Wallet_                      : 
+* _Start_                       : Mon, 24 Dec 2018 00:00:00 GMT
+* _Wallet_                      : 0xE4cfb1d905e922a93ddcA8528ab0f87b31E9e335
  
 ##### Milestones
 1. 30 days, bonus +10%
