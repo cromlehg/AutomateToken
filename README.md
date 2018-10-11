@@ -86,7 +86,7 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
  
 ##### Milestones
 1. 30 days, bonus +10%
-2. 60 days wihtout bonus
+2. 60 days without bonus
 
 
 
