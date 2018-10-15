@@ -13,8 +13,8 @@ export default function (Token, Crowdsale, wallets) {
   let token;
   let crowdsale;
   const milestones = [
-    {day: 29, bonus: 10},
-    {day: 60, bonus: 0}
+    {day: 29, bonus: 30},
+    {day: 30, bonus: 15}
   ];
 
   before(async function () {
@@ -27,14 +27,13 @@ export default function (Token, Crowdsale, wallets) {
     crowdsale = await Crowdsale.new();
     await token.setSaleAgent(crowdsale.address);
     await crowdsale.setToken(token.address);
-    await crowdsale.setStart(latestTime());
+    await crowdsale.setStart(this.start);
+    await crowdsale.addMilestone(30, 30);
+    await crowdsale.addMilestone(30, 15);
     await crowdsale.setPrice(this.price);
     await crowdsale.setHardcap(this.hardcap);
-    await crowdsale.setMinInvestedLimit(this.minInvestedLimit);   
-    await crowdsale.addMilestone(30, 10);
-    await crowdsale.addMilestone(60, 0);
+    await crowdsale.setMinInvestedLimit(this.minInvestedLimit);
     await crowdsale.setWallet(this.wallet);
-    await crowdsale.addWallet(wallets[3], this.TeamTokensPercent);
   });
 
   milestones.forEach((milestone, i) => {

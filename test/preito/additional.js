@@ -25,9 +25,9 @@ export default function (Token, Crowdsale, wallets) {
     await token.setSaleAgent(crowdsale.address);
     await crowdsale.setToken(token.address);
     await crowdsale.setStart(latestTime());
-    await crowdsale.setPeriod(this.period);
+    await crowdsale.addMilestone(30, 30);
+    await crowdsale.addMilestone(30, 15);
     await crowdsale.setPrice(this.price);
-    await crowdsale.setSoftcap(this.softcap);
     await crowdsale.setHardcap(this.hardcap);
     await crowdsale.setMinInvestedLimit(this.minInvestedLimit);
     await crowdsale.setWallet(this.wallet);
@@ -37,7 +37,7 @@ export default function (Token, Crowdsale, wallets) {
     const owner = await crowdsale.owner();
     await crowdsale.mintTokensByETHExternal(wallets[4], ether(1), {from: owner}).should.be.fulfilled;
     const balance = await token.balanceOf(wallets[4]);
-    balance.should.bignumber.equal(this.price.times(1));
+    balance.should.bignumber.equal(this.price.times(1.3));
   });
 
   it('should mintTokensByETHExternal by  Direct Mint Agend', async function () {
@@ -45,7 +45,7 @@ export default function (Token, Crowdsale, wallets) {
     await crowdsale.setDirectMintAgent(wallets[2], {from: owner});
     await crowdsale.mintTokensByETHExternal(wallets[5], ether(1), {from: wallets[2]}).should.be.fulfilled;
     const balance = await token.balanceOf(wallets[5]);
-    balance.should.bignumber.equal(this.price.times(1));
+    balance.should.bignumber.equal(this.price.times(1.3));
   });
 
   it('should mintTokensExternal by owner', async function () {
@@ -61,6 +61,15 @@ export default function (Token, Crowdsale, wallets) {
     await crowdsale.mintTokensExternal(wallets[6], tokens(100), {from: wallets[3]}).should.be.fulfilled;
     const balance = await token.balanceOf(wallets[6]);
     balance.should.bignumber.equal(tokens(100));
+  });
+
+  it('should use wallet for investments', async function () {
+    const investment = ether(1);
+    const pre = web3.eth.getBalance(this.wallet);
+    const owner = await crowdsale.owner();
+    await crowdsale.sendTransaction({value: investment, from: wallets[1]});
+    const post = web3.eth.getBalance(this.wallet);
+    post.minus(pre).should.bignumber.equal(investment);
   });
 
   it('should transfer from unlocked address accounts during crowdsale', async function () {

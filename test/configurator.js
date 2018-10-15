@@ -21,7 +21,7 @@ contract('Configurator integration test', function (accounts) {
   let preito;
   let ito;
 
-  const manager = '0xd8Fe93097F0Ef354fEfee2e77458eeCc19D8D704';
+  const manager = '0xdc820f1BD6DaDF2DaD597D2e85255003c596Ad8a';
 
   before(async function () {
     // Advance to the next block to correctly read time in the solidity "now" function interpreted by testrpc
@@ -55,28 +55,23 @@ contract('Configurator integration test', function (accounts) {
 
   it('preITO and ITO should have start time as described in README', async function () {
     const preitoStart = await preito.start();
-    preitoStart.should.bignumber.equal((new Date('15 Jul 2018 00:00:00 GMT')).getTime() / 1000);
+    preitoStart.should.bignumber.equal((new Date('24 Oct 2018 00:00:00 GMT')).getTime() / 1000);
     const itoStart = await ito.start();
-    itoStart.should.bignumber.equal((new Date('01 Sep 2018 00:00:00 GMT')).getTime() / 1000);
+    itoStart.should.bignumber.equal((new Date('24 Dec 2018 00:00:00 GMT')).getTime() / 1000);
   });
 
   it ('preTCO and ITO should have price as described in README', async function () {
     const preitoPrice = await preito.price();
-    preitoPrice.should.bignumber.equal(tokens(1080));
+    preitoPrice.should.bignumber.equal(tokens(1000));
     const itoPrice = await ito.price();
-    itoPrice.should.bignumber.equal(tokens(900));
-  });
-
-  it ('preITO should have softcap as described in README', async function () {
-    const preitoSoftcap = await preito.softcap();
-    preitoSoftcap.should.bignumber.equal(ether(1000));
+    itoPrice.should.bignumber.equal(tokens(1000));
   });
 
   it ('preITO and ITO should have hardcap as described in README', async function () {
     const preitoHardcap = await preito.hardcap();
-    preitoHardcap.should.bignumber.equal(ether(4000));
+    preitoHardcap.should.bignumber.equal(ether(10000));
     const itoHardcap = await ito.hardcap();
-    itoHardcap.should.bignumber.equal(ether(32777));
+    itoHardcap.should.bignumber.equal(ether(20000));
   });
 
   it ('preITO and ITO should have minimal insvested limit as described in README', async function () {
@@ -88,22 +83,14 @@ contract('Configurator integration test', function (accounts) {
 
   it ('preITO and ITO should have wallets as described in README', async function () {
     const preitoWallet = await preito.wallet();
-    preitoWallet.should.bignumber.equal('0x89C92383bCF3EecD5180aBd055Bf319ceFD2D516');
+    preitoWallet.should.bignumber.equal('0xE4cfb1d905e922a93ddcA8528ab0f87b31E9e335');
     const itoWallet = await ito.wallet();
-    itoWallet.should.bignumber.equal('0xb13a4803bcC374B8BbCaf625cdD0a3Ac85CdC0DA');
-  });
-
-  it ('preITO and ITO should have direct mint agent as described in README', async function () {
-    const preitoAgent = await preito.directMintAgent();
-    preitoAgent.should.bignumber.equal('0xF3D57FC2903Cbdfe1e1d33bE38Ad0A0753E72406');
-    const itoAgent = await ito.directMintAgent();
-    itoAgent.should.bignumber.equal('0xF3D57FC2903Cbdfe1e1d33bE38Ad0A0753E72406');
+    itoWallet.should.bignumber.equal('0xE4cfb1d905e922a93ddcA8528ab0f87b31E9e335');
   });
 
   it ('ITO should have team wallet address as described in README', async function () {
     const teamWallet = await ito.wallets(0);
-    teamWallet.should.bignumber.equal('0xA5A5cf5325AeDA4aB32b9b0E0E8fa91aBDb64DdC');
+    teamWallet.should.bignumber.equal('0xA6b01Ed54c51f5158e1D8c85BFb3c45cB28F323C');
   });
 
 });
-

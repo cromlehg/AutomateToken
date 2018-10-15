@@ -28,13 +28,8 @@ export default function (Token, Crowdsale, wallets) {
     await crowdsale.setPrice(this.price);
     await crowdsale.setHardcap(this.hardcap);
     await crowdsale.setMinInvestedLimit(this.minInvestedLimit);
-    await crowdsale.addMilestone(7, 15);
-    await crowdsale.addMilestone(7, 13);
-    await crowdsale.addMilestone(7, 11);
-    await crowdsale.addMilestone(7, 9);
-    await crowdsale.addMilestone(7, 7);
-    await crowdsale.addMilestone(7, 5);
-    await crowdsale.addMilestone(7, 3);
+    await crowdsale.addMilestone(30, 10);
+    await crowdsale.addMilestone(60, 0);
     await crowdsale.setWallet(this.wallet);
     await crowdsale.addWallet(wallets[3], this.TeamTokensPercent);
   });
@@ -43,7 +38,7 @@ export default function (Token, Crowdsale, wallets) {
     const owner = await crowdsale.owner();
     await crowdsale.mintTokensByETHExternal(wallets[4], ether(1), {from: owner}).should.be.fulfilled;
     const balance = await token.balanceOf(wallets[4]);
-    balance.should.bignumber.equal(this.price.times(1.15));
+    balance.should.bignumber.equal(this.price.times(1.1));
   });
 
   it('should mintTokensByETHExternal by Direct Mint Agend', async function () {
@@ -51,7 +46,7 @@ export default function (Token, Crowdsale, wallets) {
     await crowdsale.setDirectMintAgent(wallets[2], {from: owner});
     await crowdsale.mintTokensByETHExternal(wallets[5], ether(1), {from: wallets[2]}).should.be.fulfilled;
     const balance = await token.balanceOf(wallets[5]);
-    balance.should.bignumber.equal(this.price.times(1.15));
+    balance.should.bignumber.equal(this.price.times(1.1));
   });
 
   it('should mintTokensExternal by owner', async function () {

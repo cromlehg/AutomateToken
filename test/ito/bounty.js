@@ -28,13 +28,8 @@ export default function (Token, Crowdsale, wallets) {
     await crowdsale.setPrice(this.price);
     await crowdsale.setHardcap(this.hardcap);
     await crowdsale.setMinInvestedLimit(this.minInvestedLimit);
-    await crowdsale.addMilestone(7, 15);
-    await crowdsale.addMilestone(7, 13);
-    await crowdsale.addMilestone(7, 11);
-    await crowdsale.addMilestone(7, 9);
-    await crowdsale.addMilestone(7, 7);
-    await crowdsale.addMilestone(7, 5);
-    await crowdsale.addMilestone(7, 3);
+    await crowdsale.addMilestone(30, 10);
+    await crowdsale.addMilestone(60, 0);
     await crowdsale.setWallet(this.wallet);
     await crowdsale.addWallet(wallets[3], this.TeamTokensPercent);
   });

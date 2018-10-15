@@ -40,13 +40,13 @@ contract('ITO - additional features test', function (accounts) {
 
 function config() {
   // variables list based on info from README
-  this.start = unixTime('01 Sep 2018 00:00:00 GMT');
-  this.period = 49;
-  this.price = tokens(900);
-  this.hardcap = ether(32777);
+  this.start = unixTime('24 Dec 2018 00:00:00 GMT');
+  this.period = 90;
+  this.price = tokens(1000);
+  this.hardcap = ether(20000);
   this.minInvestedLimit = ether(0.1);
-  this.wallet = '0xb13a4803bcC374B8BbCaf625cdD0a3Ac85CdC0DA';
-  this.TeamTokensPercent = 10;
+  this.wallet = '0xE4cfb1d905e922a93ddcA8528ab0f87b31E9e335';
+  this.TeamTokensPercent = 8;
 
   // variables for additional testing convinience
   this.end = this.start + duration.days(this.period);
