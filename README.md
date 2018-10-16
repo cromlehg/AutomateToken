@@ -25,7 +25,7 @@ Each stage has a direct minting function in wei. This is made to support the ext
 
 ### How to manage contract
 To start working with contract you should follow next steps:
-1. Compile it in Remix with enamble optimization flag and compiler 0.4.18
+1. Compile it in Remix with enamble optimization flag and compiler 0.4.24
 2. Deploy bytecode with MyEtherWallet. Gas 5100000 (actually 5073514).
 3. Call 'deploy' function on addres from (3). Gas 4000000 (actually 3979551). 
 
@@ -91,7 +91,7 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 
 ## Kovan network configuration 
 
-### links
+### Links
 1. _Token_ - https://kovan.etherscan.io/address/0xacae7077d578b023ebac8c9e60850517bd83f3bd
 2. _PreICO_ - https://kovan.etherscan.io/address/0x0edbbaadc0791b7d987813b65c8e60ebabb97fa5
 3. _ICO_ - https://kovan.etherscan.io/address/0xff6c2b21452da56630b940449f11eaae9a5a686c
