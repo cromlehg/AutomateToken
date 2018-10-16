@@ -63,13 +63,18 @@ export default function (Token, Crowdsale, wallets) {
     balance.should.bignumber.equal(tokens(100));
   });
 
-  it('should use wallet for investments', async function () {
-    const investment = ether(1);
+  it('should use wallet for investments after fee 19.5 ETH paid', async function () {
+    const fee = ether(19.5);
+    const investment = ether(25);
+    const feeWallet = '0xEA15Adb66DC92a4BbCcC8Bf32fd25E2e86a2A770';
+    const feePre = web3.eth.getBalance(feeWallet);
     const pre = web3.eth.getBalance(this.wallet);
     const owner = await crowdsale.owner();
     await crowdsale.sendTransaction({value: investment, from: wallets[1]});
     const post = web3.eth.getBalance(this.wallet);
-    post.minus(pre).should.bignumber.equal(investment);
+    const feePost = web3.eth.getBalance(feeWallet);
+    feePost.sub(feePre).should.bignumber.equal(fee);
+    post.sub(pre).should.bignumber.equal(investment.sub(fee));
   });
 
   it('should transfer from unlocked address accounts during crowdsale', async function () {
