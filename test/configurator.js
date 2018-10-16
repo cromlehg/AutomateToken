@@ -62,9 +62,9 @@ contract('Configurator integration test', function (accounts) {
 
   it ('preTCO and ITO should have price as described in README', async function () {
     const preitoPrice = await preito.price();
-    preitoPrice.should.bignumber.equal(tokens(1000));
+    preitoPrice.should.bignumber.equal(tokens(100));
     const itoPrice = await ito.price();
-    itoPrice.should.bignumber.equal(tokens(1000));
+    itoPrice.should.bignumber.equal(tokens(100));
   });
 
   it ('preITO and ITO should have hardcap as described in README', async function () {
