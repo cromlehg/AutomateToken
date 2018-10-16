@@ -89,4 +89,79 @@ Investor must not use other wallets, coinmarkets or stocks. Can lose money.
 2. 60 days without bonus
 
 
+## Kovan network configuration 
 
+### links
+1. _Token_ - https://kovan.etherscan.io/address/0xacae7077d578b023ebac8c9e60850517bd83f3bd
+2. _PreICO_ - https://kovan.etherscan.io/address/0x0edbbaadc0791b7d987813b65c8e60ebabb97fa5
+3. _ICO_ - https://kovan.etherscan.io/address/0xff6c2b21452da56630b940449f11eaae9a5a686c
+
+
+### Crowdsale stages
+
+#### PreICO
+
+* _Minimal insvested limit_     : 0.1 ETH
+* _Base price_                  : 1 ETH = 1000 Tokens
+* _Hardcap_                     : 10 000 ETH
+* _Start_                       : Tue, 16 Oct 2018 00:00:00 GMT
+* _Wallet_                      : 0x093A89bDb5CE905fecb6272ff3ac92f53350a79A
+
+_Milestones_
+
+1. 30 days, bonus +30%
+2. 30 days, bonus +15%
+
+##### Purchasers
+
+* 0.5 ETH => 650 tokens (30% bonus), gas = 220058
+https://kovan.etherscan.io/tx/0x8fce413c9985a12fabdd4d62633db73e8a42ef4a4264614c498a9d3971ace793
+
+* 0.1 ETH =>  130 tokens (30% bonus), gas = 96866
+https://kovan.etherscan.io/tx/0x31bb23ed422cb3208d74f1440036558550a19b0356ea3e7585c04d5b6a29e361
+
+* 0.09 ETH => rejected txn, less then mininal investment limit, gas = 21303
+https://kovan.etherscan.io/tx/0x78dbb4c1447f95e99fd52e388a99d6d167abd214eed5ca36497eec59ed438b8a
+
+* 0.1 ETH => rejected txn, preITO is finished, gas = 30000
+https://kovan.etherscan.io/tx/0x33f75a4a248be72985632526264e126e540ec5bf2a994b7c534f9c4da1beab11
+
+##### Service operations
+
+* finish, gas = 30351
+https://kovan.etherscan.io/tx/0xead6b82497e02d5fcc5adf15ebd9f3e0242ae208d04f90ca5325b0e3acc0115d
+
+#### ICO
+
+* _Minimal insvested limit_     : 0.1 ETH
+* _Base price_                  : 1 ETH = 1000 Tokens
+* _Hardcap_                     : 20 000 ETH
+* _Wallet_                      : 0x093A89bDb5CE905fecb6272ff3ac92f53350a79A
+* _Start_                       : Tue, 16 Oct 2018 00:00:00 GMT
+* _Bounty tokens percent_       : 8%
+* _Bounty tokens wallet_        : 0x8Ba7Aa817e5E0cB27D9c146A452Ea8273f8EFF29
+
+_Milestones_
+
+1. 30 days, bonus +10%
+2. 60 days without bonus
+
+##### Purchasers
+  
+* 0.2 ETH => 220 tokens (10% bonus), gas = 71065
+https://kovan.etherscan.io/tx/0xe36c562a3b6572f10e82b3f1afed05260c78f4a93c73a05ae3182689cc2d73b4
+
+* 0.4 ETH => 400 tokens (without bonus), gas = 56758
+https://kovan.etherscan.io/tx/0xb488810169667ad717ff033e798ba10bad73cd036024ce67b715f5cc91c0e916
+
+##### Service operations
+
+* setStart, gas = 27883
+https://kovan.etherscan.io/tx/0x23f3eb197b01ea8be91eefbb66bd44ea15e83d93bd82130140b273229700228e
+
+* finish, gas = 97094
+https://kovan.etherscan.io/tx/0x869c63958d3fbb9660cbc9fbe1255be65495710ec7a9e0f7aca7f6202a46fb17
+
+##### Token holders
+
+https://kovan.etherscan.io/token/0xacae7077d578b023ebac8c9e60850517bd83f3bd#balances
