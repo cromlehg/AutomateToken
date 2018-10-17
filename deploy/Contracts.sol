@@ -404,7 +404,7 @@ contract Token is MintableToken {
 
   string public constant name = "AutomateToken";
 
-  string public constant symbol = "ATM";
+  string public constant symbol = "AMT";
 
   uint32 public constant decimals = 18;
 
