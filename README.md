@@ -1,10 +1,10 @@
 ![AutomateToken](logo.png "AutomateToken")
 
-# ATM token smart contract
+# AMT token smart contract
 
 * _Standard_        : [ERC20](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md)
 * _[Name](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md#name)_            : AutomateToken
-* _[Ticker](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md#symbol)_          : ATM
+* _[Ticker](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md#symbol)_          : AMT
 * _[Decimals](https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20.md#decimals)_        : 18
 * _Emission_        : Mintable
 * _Crowdsales_      : 2
