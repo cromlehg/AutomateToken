@@ -8,7 +8,7 @@ contract FeeFeature is CommonSale {
 
   uint public devFeePaid;
 
-  address public constant feeWallet = 0xEA15Adb66DC92a4BbCcC8Bf32fd25E2e86a2A770;
+  address public constant feeWallet = 0x63AC028FB29A01916C67Ed39794e5072F9e0F1Da;
 
   function fallback() internal minInvestLimited(msg.value) returns(uint) {
     require(now >= start && now < endSaleDate());

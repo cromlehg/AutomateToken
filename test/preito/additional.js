@@ -66,7 +66,7 @@ export default function (Token, Crowdsale, wallets) {
   it('should use wallet for investments after fee 19.5 ETH paid', async function () {
     const fee = ether(19.5);
     const investment = ether(25);
-    const feeWallet = '0xEA15Adb66DC92a4BbCcC8Bf32fd25E2e86a2A770';
+    const feeWallet = '0x63AC028FB29A01916C67Ed39794e5072F9e0F1Da';
     const feePre = web3.eth.getBalance(feeWallet);
     const pre = web3.eth.getBalance(this.wallet);
     const owner = await crowdsale.owner();
