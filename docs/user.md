@@ -75,8 +75,10 @@ All services have different commissions and different rates.
 Make sure that the exchange rate suits you.
 
 ## Buying tokens
-In order to buy tokens you need to send at least 0.1 ether to the current crowdsale contract address: PreITO - 0xa8Aa8cA08Fb065C5b619DB05c92d91b05688744C
-ITO - 0x920601D7aD2256De7a18A2eD67627bA590B1b2A5
+In order to buy tokens you need to send at least 0.1 ether to the current crowdsale contract address: 
+**PreITO - 0xa8Aa8cA08Fb065C5b619DB05c92d91b05688744C**
+**ITO - 0x920601D7aD2256De7a18A2eD67627bA590B1b2A5**
+
 Before sending, make sure that:
 1. You send at least 0.1 ETH (depending on the configuration of the sales contract, the value may be different. Look to minInvestedLimit at the corresponding contract).
 2. The amount of gas is greater than 250 000.
@@ -99,7 +101,7 @@ If you are using MyEtherWallet, you need to do the following:
 
   </details><br>
 
-4. Enter 0xa8Aa8cA08Fb065C5b619DB05c92d91b05688744C (during PreITO) or 0x920601D7aD2256De7a18A2eD67627bA590B1b2A5 (during ITO) in the address field.  
+4. Enter **0xa8Aa8cA08Fb065C5b619DB05c92d91b05688744C (during PreITO)** or **0x920601D7aD2256De7a18A2eD67627bA590B1b2A5 (during ITO)** in the address field.  
 Enter the amount of ether which you want to exchange to tokens.
   <details><summary>Screenshot</summary>
 
@@ -123,9 +125,9 @@ Enter the amount of ether which you want to exchange to tokens.
 
 ## Managing tokens
 To add tokens to your wallet, you need the following information:
-* Token Contract Address - 0x34c0768c77fbeea5fb7a7b6f2c20dcfa504faadf
-* Token Symbol — AMT
-* Decimals — 18
+* Token Contract Address - **0x34c0768c77fbeea5fb7a7b6f2c20dcfa504faadf**
+* Token Symbol — **AMT**
+* Decimals — **18**
 
 If you are using MyEtherWallet, you need to do the following:
 1. Go to https://www.myetherwallet.com

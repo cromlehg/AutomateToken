@@ -11,7 +11,7 @@
 
 ## Создание кошелька
 Для участия в распродаже вам необходим кошелек эфира с поддержкой ERC20.
-Если у вас такого нет, рукомендуется использовать https://www.myetherwallet.com.
+Если у вас такого нет, рекомендуется использовать https://www.myetherwallet.com.
 
 1. Перейдите по ссылке https://www.myetherwallet.com
   <details><summary>Screenshot</summary>
@@ -20,15 +20,15 @@
 
   </details><br>
 
-2. Введите надежный, но легко запоминаемый пароль. Не забудьте его. Нажмите "Create New Wallet/Создать кошелек"
+2. Введите надежный, но легко запоминаемый пароль. Нажмите "Create New Wallet/ Создать кошелек"
   <details><summary>Screenshot</summary>
 
   ![creating_a_wallet_02](images/creating_a_wallet_02.jpg)
 
   </details><br>
 
-3. Скачайте Keystore файл кошелька и сохраните этот файл, нажав на синюю кнопку.  
-Прочтите предупреждение. Если вам оно понятно, нажмите кнопку "I understand. Continue".
+3. Скачайте Keystore файл кошелька, нажав на синюю кнопку, сохраните этот файл.  
+Прочтите предупреждение и затем нажмите кнопку "I understand. Continue".
   <details><summary>Screenshot</summary>
 
   ![creating_a_wallet_03](images/creating_a_wallet_03.jpg)
@@ -49,7 +49,7 @@
 
   </details><br>
 
-6. Нажмите "Select wallet file/ Выбрать файл с кошельком", выберете сохраненный ранее Keystore файл, введите пароль. Затем нажмите "Unlock/ Отпереть".
+6. Нажмите "Select wallet file/ Выбрать файл с кошельком", выберите сохраненный ранее Keystore файл, введите пароль. Затем нажмите "Unlock/ Отпереть".
   <details><summary>Screenshot</summary>
 
   ![creating_a_wallet_06](images/creating_a_wallet_06.jpg)
@@ -76,9 +76,10 @@
 
 ## Покупка токенов
 Чтобы купить токены, вам нужно отправить не менее 0.1 ETH на адрес контракта текущей распродажи:
-PreITO - 0xa8Aa8cA08Fb065C5b619DB05c92d91b05688744C
-ITO - 0x920601D7aD2256De7a18A2eD67627bA590B1b2A5
-Перед отправкоц убедитесь:
+**PreITO - 0xa8Aa8cA08Fb065C5b619DB05c92d91b05688744C**
+**ITO - 0x920601D7aD2256De7a18A2eD67627bA590B1b2A5**
+
+Перед отправкой убедитесь:
 1. Вы отправляете не менее 0.1 ETH (в зависимости от конфигурации контракта, значение может быть другим. Смотрите minInvestedLimit соответствующего контракта).
 2. Количество газа не менее 250 000.
 3. Цена газа не менее 30 Gwei. Транзакции с меньшим количеством газа будут выполняться дольше.
@@ -100,7 +101,7 @@ ITO - 0x920601D7aD2256De7a18A2eD67627bA590B1b2A5
 
   </details><br>
 
-4. В поле адреса введите 0xa8Aa8cA08Fb065C5b619DB05c92d91b05688744C (во время PreITO) или 0x920601D7aD2256De7a18A2eD67627bA590B1b2A5 (во время ITO).  
+4. В поле адреса введите **0xa8Aa8cA08Fb065C5b619DB05c92d91b05688744C (во время PreITO)** или **0x920601D7aD2256De7a18A2eD67627bA590B1b2A5 (во время ITO)**.  
 Введите сумму эфира, на которую вы хотите купить токены.
   <details><summary>Screenshot</summary>
 
@@ -124,9 +125,9 @@ ITO - 0x920601D7aD2256De7a18A2eD67627bA590B1b2A5
 
 ## Управление токенами
 Чтобы добавить токены в ваш кошелек, вам необходима следующая информация:
-* Адрес контракта токена - 0x34c0768c77fbeea5fb7a7b6f2c20dcfa504faadf
-* Символ токена — AMT
-* Дробность — 18
+* Адрес контракта токена - **0x34c0768c77fbeea5fb7a7b6f2c20dcfa504faadf**
+* Символ токена — **AMT**
+* Дробность — **18**
 
 Если вы используете MyEtherWallet, сделайте следующее:
 1. Перейдите по ссылке https://www.myetherwallet.com
@@ -137,7 +138,7 @@ ITO - 0x920601D7aD2256De7a18A2eD67627bA590B1b2A5
 
   </details><br>
 
-3. Выберете пункт "Keystore / JSON File", нажмите "Select wallet file/ Выбрать файл с кошельком", введите пароль и нажмите "Unlock/ Отпереть".
+3. Выберите пункт "Keystore / JSON File", нажмите "Select wallet file/ Выбрать файл с кошельком", введите пароль и нажмите "Unlock/ Отпереть".
   <details><summary>Screenshot</summary>
 
   ![creating_a_wallet_06](images/creating_a_wallet_06.jpg)
