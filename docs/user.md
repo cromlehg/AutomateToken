@@ -76,8 +76,8 @@ Make sure that the exchange rate suits you.
 
 ## Buying tokens
 In order to buy tokens you need to send at least 0.1 ether to the current crowdsale contract address: 
-**PreITO - 0xa8Aa8cA08Fb065C5b619DB05c92d91b05688744C**
-**ITO - 0x920601D7aD2256De7a18A2eD67627bA590B1b2A5**
+**PreITO - 0xa8Aa8cA08Fb065C5b619DB05c92d91b05688744C**,
+**ITO - 0x920601D7aD2256De7a18A2eD67627bA590B1b2A5**.
 
 Before sending, make sure that:
 1. You send at least 0.1 ETH (depending on the configuration of the sales contract, the value may be different. Look to minInvestedLimit at the corresponding contract).
